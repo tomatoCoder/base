@@ -3,7 +3,7 @@
  * @Author: qingyang
  * @Date: 2021-01-07 15:32:56
  * @LastEditors: qingyang
- * @LastEditTime: 2021-01-11 10:56:23
+ * @LastEditTime: 2021-01-11 14:04:29
  */
 import Vue from "vue";
 import App from "./App.vue";

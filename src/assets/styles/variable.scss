@@ -1,3 +1,16 @@
-$--color-primary: red;
+
+
+
+
+
+/* element-ui样式 */
+$--color-primary: green;
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+/* 其他样式 */
 $themeColor: red; // 主题色
 $e-text-color: rgba(0,0,0,0.8);//基本色

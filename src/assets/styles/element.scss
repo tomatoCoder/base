@@ -1,0 +1,59 @@
+.el-dialog__header {
+    padding: 24px 32px 10px 32px;
+    .el-dialog__title {
+        font-size: 20px;
+        color: $e-text-color;
+    }
+}
+.el-dialog__body {
+    padding: 18px 32px;
+}
+
+.el-table {
+    .el-table__header-wrapper {
+        border-radius: 2px;
+        tr>th {
+            background: #F9F9FB;
+           
+        }
+    }
+    td, th {
+        padding: 9px 0;
+    }
+}
+.el-message {
+    height: 56px;
+    border-radius:2px;
+    .el-message__icon {
+        font-size: 24px;
+    }
+    .el-message__content {
+        font-size: 16px;
+    }
+    &--success {
+        background:rgba(223,255,241,0.9);
+        .el-message__icon {
+            color: #0FBD70;
+        }
+        .el-message__content {
+            color: #0FBD70;
+        }
+        .el-icon-close {
+            color: #67C23A;
+            font-size: 12px;
+        }
+    }
+    &--error {
+        background:rgba(255,223,230,0.9);
+        .el-message__icon {
+            color: #E6103E;
+        }
+        .el-message__content {
+            color: #E6103E;
+        }
+        .el-icon-close {
+            color: #E6103E;
+            font-size: 12px;
+        }
+    }
+}
