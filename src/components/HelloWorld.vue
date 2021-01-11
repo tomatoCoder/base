@@ -3,12 +3,11 @@
  * @Author: qingyang
  * @Date: 2021-01-07 15:32:56
  * @LastEditors: qingyang
- * @LastEditTime: 2021-01-11 16:23:28
+ * @LastEditTime: 2021-01-11 18:00:48
 -->
 <template>
   <div class="container">
-    1123
-    <el-button type="primary">1231467813</el-button>
+    <el-button type="primary" @click="createRandom">生成随机数</el-button>
     <i class="iconfont">&#xe61b;</i>
   </div>
 </template>
@@ -22,18 +21,23 @@ export default Vue.extend({
   },
   created() {
     this.$message("1231");
-    const num = this.$u.random(100, 105);
-    alert(num);
     const test = "1.1";
     console.log(test);
-    // if (this.$u.test.digits(test)) {
-    //   alert(1);
-    // } else {
-    //   alert(2);
-    // }
+    if (this.$u.test.digits(test)) {
+      console.log("是整数");
+    } else {
+      console.log("不是整数");
+    }
   },
   computed: {},
-  methods: {}
+  methods: {
+    createRandom() {
+      const num = this.$u.random(100, 105);
+      const now = this.$u.timeFormat();
+      debugger;
+      alert(num);
+    }
+  }
 });
 </script>
 <style lang="scss" scoped></style>
