@@ -1,6 +1,13 @@
+<!--
+ * @Description: 
+ * @Author: qingyang
+ * @Date: 2021-01-07 15:32:56
+ * @LastEditors: qingyang
+ * @LastEditTime: 2021-01-11 10:48:05
+-->
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="Vue logo" src="../assets/images/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
