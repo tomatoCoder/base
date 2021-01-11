@@ -3,11 +3,11 @@
  * @Author: qingyang
  * @Date: 2021-01-07 15:32:56
  * @LastEditors: qingyang
- * @LastEditTime: 2021-01-11 14:14:15
+ * @LastEditTime: 2021-01-11 16:23:28
 -->
 <template>
   <div class="container">
-    1
+    1123
     <el-button type="primary">1231467813</el-button>
     <i class="iconfont">&#xe61b;</i>
   </div>
@@ -21,9 +21,16 @@ export default Vue.extend({
     };
   },
   created() {
-    const test = "tet";
+    this.$message("1231");
+    const num = this.$u.random(100, 105);
+    alert(num);
+    const test = "1.1";
     console.log(test);
-    // TODO
+    // if (this.$u.test.digits(test)) {
+    //   alert(1);
+    // } else {
+    //   alert(2);
+    // }
   },
   computed: {},
   methods: {}
