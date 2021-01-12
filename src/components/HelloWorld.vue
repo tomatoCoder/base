@@ -3,7 +3,7 @@
  * @Author: qingyang
  * @Date: 2021-01-07 15:32:56
  * @LastEditors: qingyang
- * @LastEditTime: 2021-01-11 18:00:48
+ * @LastEditTime: 2021-01-12 11:31:42
 -->
 <template>
   <div class="container">
@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 export default Vue.extend({
   data() {
     return {
@@ -20,13 +20,18 @@ export default Vue.extend({
     };
   },
   created() {
-    this.$message("1231");
-    const test = "1.1";
+    this.$message('1231');
+    const dataa = '1313';
+    const a = 1,
+      b = 2,
+      c = 3;
+    const foo = a + b * c;
+    const test = '123131';
     console.log(test);
     if (this.$u.test.digits(test)) {
-      console.log("是整数");
+      console.log('是整数');
     } else {
-      console.log("不是整数");
+      console.log('不是整数');
     }
   },
   computed: {},
@@ -34,10 +39,13 @@ export default Vue.extend({
     createRandom() {
       const num = this.$u.random(100, 105);
       const now = this.$u.timeFormat();
-      debugger;
       alert(num);
     }
   }
 });
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  color: 'red';
+}
+</style>

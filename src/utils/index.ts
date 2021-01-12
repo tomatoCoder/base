@@ -6,9 +6,9 @@
  * @LastEditTime: 2021-01-11 18:03:59
  */
 
-import test from "./test"; // 验证模块
-import random from "./random";
-import { timeFormat } from './timeFormat'
+import test from './test'; // 验证模块
+import random from './random';
+import { timeFormat } from './timeFormat';
 
 const $u = {
   test,
@@ -19,7 +19,7 @@ const $u = {
 const install = (Vue: any) => {
   Vue.prototype.$u = $u;
 };
-declare module "vue/types/vue" {
+declare module 'vue/types/vue' {
   interface Vue {
     $u: any;
   }

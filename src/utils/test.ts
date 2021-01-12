@@ -97,19 +97,19 @@ const contains = (value: string, param: string) => {
  */
 const empty = (value: any) => {
   switch (typeof value) {
-    case "undefined":
+    case 'undefined':
       return true;
-    case "string":
-      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, "").length == 0)
+    case 'string':
+      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, '').length == 0)
         return true;
       break;
-    case "boolean":
+    case 'boolean':
       if (!value) return true;
       break;
-    case "number":
+    case 'number':
       if (0 === value || isNaN(value)) return true;
       break;
-    case "object":
+    case 'object':
       if (null === value || value.length === 0) return true;
       for (const i in value) {
         return false;

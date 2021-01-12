@@ -6,4 +6,4 @@
  * @LastEditTime: 2021-01-11 17:48:25
  */
 
- export const MYURL = "1221"
+export const MYURL = '1221';
