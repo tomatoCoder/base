@@ -3,7 +3,7 @@
  * @Author: qingyang
  * @Date: 2021-01-07 15:32:56
  * @LastEditors: qingyang
- * @LastEditTime: 2021-01-12 11:31:42
+ * @LastEditTime: 2021-04-02 17:32:37
 -->
 <template>
   <div class="container">
@@ -12,6 +12,7 @@
   </div>
 </template>
 <script lang="ts">
+import { timeTest, promiseTest, asyncTest } from '@/utils/asyncTest';
 import Vue from 'vue';
 export default Vue.extend({
   data() {
@@ -21,18 +22,21 @@ export default Vue.extend({
   },
   created() {
     this.$message('1231');
-    const dataa = '1313';
+    const dataa = '23131';
     const a = 1,
       b = 2,
       c = 3;
     const foo = a + b * c;
-    const test = '123131';
+    const test = '1313';
     console.log(test);
     if (this.$u.test.digits(test)) {
       console.log('是整数');
     } else {
       console.log('不是整数');
     }
+    // timeTest();
+    // promiseTest();
+    asyncTest();
   },
   computed: {},
   methods: {
