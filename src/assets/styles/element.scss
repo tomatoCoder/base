@@ -1,3 +1,10 @@
+/* element-ui样式 */
+$--color-primary: green;
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
 .el-dialog__header {
     padding: 24px 32px 10px 32px;
     .el-dialog__title {
